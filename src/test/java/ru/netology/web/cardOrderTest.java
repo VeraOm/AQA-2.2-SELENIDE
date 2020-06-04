@@ -18,7 +18,7 @@ public class cardOrderTest {
         $("[data-test-id='city'] input").setValue("Омск");
 
         Calendar calendar = Calendar.getInstance();
-        calendar.add(Calendar.DAY_OF_MONTH, 1);
+        calendar.add(Calendar.DAY_OF_MONTH, 10);
         SimpleDateFormat rusDateFormat = new SimpleDateFormat("dd.MM.yyyy");
         String dateMeeting = rusDateFormat.format(calendar.getTime());
         SelenideElement dateElement = $("[data-test-id=date] input[class=input__control]");
